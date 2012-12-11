@@ -1,0 +1,39 @@
+
+<div id="twitter-widget-8" class="twitter-tweet-rendered" lang="en" style="">
+	<div class="twt-border">
+		<blockquote data-twt-id="{{id_str}}" data-twt-intents="false" data-twt-product="tweetembed" class="twt-o twt-tweet h-entry twt-always-show-actions twt-pinned twt-standard">
+		    <div class="h-card p-author">
+				<a class="screen-name u-url" href="https://twitter.com/{{user.screen_name}}" data-screen-name="{{user.screen_name}}">
+		        	<span class="avatar"><img src="{{user.profile_image_url_https}}" class="u-photo" alt=""></span>
+		        	<span class="p-name">{{user.name}}</span>
+		        	<span class="p-nickname">@<b>{{user.screen_name}}</b></span>
+		        </a>
+		        
+		        <!--iframe class="twt-follow-button" allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html#align=right&amp;button=grey&amp;screen_name={{user.screen_name}}&amp;show_count=false&amp;show_screen_name=false&amp;lang=en"></iframe-->
+		    </div>
+
+		    <div class="e-content">
+		      <p class="p-name">{{text}}</p>
+		    </div>
+
+		    <div class="footer">
+		    	{{#if retweeted}}
+		    	<span class="retweet-credit" title="Retweeted by @Putopeixe on 11 Dec 2012, 6:06:17 AM (UTC)"><i></i> Retweeted by <a class="h-card" href="https://twitter.com/Putopeixe">@<b>Putopeixe</b></a></span>
+				<a class="view-details" href="https://twitter.com/{{user.screen_name}}/statuses/{{id_str}}">
+					<span class="dt-updated " title="10 Dec 2012, 4:52:01 PM (UTC)">
+		  				<span class="value-title" title="2012-12-10T16:52:01+0000"></span>
+						11 Dec 12
+					</span>
+				</a>
+		    	{{/if}}
+
+		        <ul class="twt-actions">
+					<li><a href="https://twitter.com/intent/tweet?in_reply_to={{id_str}}" class="reply-action twt-intent" title="Reply" target="_blank"><i></i><b>Reply</b></a></li>
+					<li><a href="https://twitter.com/intent/retweet?tweet_id={{id_str}}" class=" retweet-action twt-intent" title="Retweet" target="_blank"><i></i><b>Retweet</b></a></li>
+					<li><a href="https://twitter.com/intent/favorite?tweet_id={{id_str}}" class=" favorite-action twt-intent" title="Favorite" target="_blank"><i></i><b>Favorite</b></a></li>
+		  
+				</ul>
+			</div>
+		</blockquote>
+	</div>
+</div>
